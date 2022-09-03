@@ -24,7 +24,9 @@ Route::prefix('')
     ->middleware([
         // '',
     ])->group(function () {
-    Route::get('/', [IndexController::class, 'index']);
+    // Route::get('/', [IndexController::class, 'index']);
     // -----------------------------------------------------
-
+    Route::get('/', function () {
+        return view('app');
+    });
 });

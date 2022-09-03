@@ -1,2 +1,2 @@
-# base_arch_laravel_vue
-base arch laravel vue
+# base_arch_laravel
+base arch laravel 版
