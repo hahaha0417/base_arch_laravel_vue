@@ -13,8 +13,36 @@ class IndexController extends BaseController
 
     public function index()
     {
-        return view('frontend.welcome');
+        return view('frontend.index');
     }
 
+
+    public function blog()
+    {
+        return view('frontend.blog');
+    }
+
+    public function about()
+    {
+        return view('frontend.about');
+    }
+
+    public function contact()
+    {
+        return view('frontend.contact');
+    }
+
+
+    public function single_post()
+    {
+        return view('frontend.single_post');
+    }
+
+    // -------------------------------------------------
+
+    public function app()
+    {
+        return view('frontend.app');
+    }
 
 }
