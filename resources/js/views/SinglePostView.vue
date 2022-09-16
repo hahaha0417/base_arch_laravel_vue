@@ -1,14 +1,12 @@
 <!-- <script setup>語法糖 -->
 <script setup>
-    import SinglePostPage from '../components/frontend/single_post/SinglePostPage.vue'
+    import PostBlock from '../components/frontend/single_post/PostBlock.vue'
     import RecentPostsBlock from '../components/frontend/single_post/RecentPostsBlock.vue'
     import SearchBlock from '../components/frontend/single_post/SearchBlock.vue'
+    import MostPopularBlock from '../components/frontend/single_post/MostPopularBlock.vue'
+    import CommentBlock from '../components/frontend/single_post/CommentBlock.vue'
 
-    const img_architecture_1857175_1920 = "/img/architecture-1857175_1920.jpg";
-    const img_castle_1998435_1920 = "/img/castle-1998435_1920.jpg";
-    const img_staircase_274614_1920 = "/img/staircase-274614_1920.jpg";
-    const img_meeting_2284501_1920 = "/img/meeting-2284501_1920.jpg";
-    const img_building_1727807_1920 = "/img/building-1727807_1920.jpg";
+
 </script>
 
 <template>
@@ -16,11 +14,16 @@
         <div class="container">
             <div class="row mainmargin">
                 <div class="single-post col-md-8">
-                    <SinglePostPage />
+                    <PostBlock />
+                    <CommentBlock />
                 </div>
                 <div class="sidebar col-md-4">
                     <SearchBlock />
-                    <RecentPostsBlock />
+                    <div class="recent-posts pt-5">
+                        <RecentPostsBlock />
+                        <MostPopularBlock />
+                    </div>
+
                 </div>
             </div>
         </div>

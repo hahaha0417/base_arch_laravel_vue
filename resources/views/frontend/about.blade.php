@@ -114,7 +114,7 @@ use hahaha\function_base as hahaha_function_base;
                         <div class="recent-posts pt-5">
                             <h4 class="mb-3">RECENT POSTS</h4>
                             <div class="post-item">
-                                <a href="single-post.html" class="post-title">Lorem ipsum dolor sit amet consectetur
+                                <a href="/single_post" class="post-title">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit.</a>
                                 <div class="post-meta">
                                     <span><i class="far fa-user"></i> Posted by someone</span><span><i
@@ -125,7 +125,7 @@ use hahaha\function_base as hahaha_function_base;
                                     perspiciatis ex ipsam similique blanditiis. Culpa hic quia...</p>
                             </div>
                             <div class="post-item">
-                                <a href="single-post.html" class="post-title">Lorem ipsum dolor sit amet consectetur
+                                <a href="/single_post" class="post-title">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit.</a>
                                 <div class="post-meta">
                                     <span><i class="far fa-user"></i> Posted by someone</span><span><i
@@ -136,7 +136,7 @@ use hahaha\function_base as hahaha_function_base;
                                     perspiciatis ex ipsam similique blanditiis. Culpa hic quia...</p>
                             </div>
                             <div class="post-item">
-                                <a href="single-post.html" class="post-title">Lorem ipsum dolor sit amet consectetur
+                                <a href="/single_post" class="post-title">Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit.</a>
                                 <div class="post-meta">
                                     <span><i class="far fa-user"></i> Posted by someone</span><span><i

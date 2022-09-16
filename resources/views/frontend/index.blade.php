@@ -169,7 +169,7 @@ use hahaha\function_base as hahaha_function_base;
                                 <span><i class="far fa-user"></i> Posted by someone</span><span><i
                                         class="far fa-calendar"></i> 30 07 2021</span>
                             </div>
-                            <a href="single-post.html" class="post-title">Lorem ipsum dolor sit amet consectetur
+                            <a href="/single_post" class="post-title">Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit.</a>
                             <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
                                 perspiciatis ex ipsam similique blanditiis. Culpa hic quia, repellendus corrupti
@@ -184,7 +184,7 @@ use hahaha\function_base as hahaha_function_base;
                                 <span><i class="far fa-user"></i> Posted by someone</span><span><i
                                         class="far fa-calendar"></i> 30 07 2021</span>
                             </div>
-                            <a href="single-post.html" class="post-title">Lorem ipsum dolor sit amet consectetur
+                            <a href="/single_post" class="post-title">Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit.</a>
                             <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
                                 perspiciatis ex ipsam similique blanditiis. Culpa hic quia, repellendus corrupti
@@ -199,7 +199,7 @@ use hahaha\function_base as hahaha_function_base;
                                 <span><i class="far fa-user"></i> Posted by someone</span><span><i
                                         class="far fa-calendar"></i> 30 07 2021</span>
                             </div>
-                            <a href="single-post.html" class="post-title">Lorem ipsum dolor sit amet consectetur
+                            <a href="/single_post" class="post-title">Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit.</a>
                             <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
                                 perspiciatis ex ipsam similique blanditiis. Culpa hic quia, repellendus corrupti

@@ -1,26 +1,31 @@
 <!-- <script setup>語法糖 -->
 <script setup>
-    const img_facebook_footer = "/img/facebook-footer.svg";
-    const img_instagramm_footer = "/img/instagramm-footer.svg";
-    const img_pinterest_footer = "/img/pinterest-footer.svg";
+import { useLayoutStore } from '../../../../stores/base/layout.js'
+
+
+const {
+    // headerBlock,
+    footerBlock,
+} = useLayoutStore();
 </script>
 
 <template>
     <footer class="text-center  text-uppercase py-5">
         <div class="footer-icons ">
-            <a href=""><img :src="img_facebook_footer" alt=""></a>
-            <a href=""><img :src="img_instagramm_footer" alt=""></a>
-            <a href=""><img :src="img_pinterest_footer" alt=""></a>
+            <a :href="footerBlock.facebook.href"><img :src="footerBlock.facebook.image" alt=""></a>
+            <a :href="footerBlock.instagram.href"><img :src="footerBlock.instagram.image" alt=""></a>
+            <a :href="footerBlock.pinterest.href"><img :src="footerBlock.pinterest.image" alt=""></a>
         </div>
         <div class="copyright pt-4 text-muted text-center">
-            <p>&copy; 2022 你的網域 | 建立由 <a
-                    href="https://firmbee.com/solutions/free-invoicing-app-billing-software/"
-                    title="Firmbee - Free Invoicing App" target="_blank">hahaha.com</a> </p>
+            <p>{{ footerBlock.copywrite }} <a
+                    :href="footerBlock.href"
+                    title="Firmbee - Free Invoicing App" target="_blank">{{ footerBlock.domain }}</a> </p>
             <!--
           This template is licenced under Attribution 3.0 (CC BY 3.0 PL),
           You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
           -->
         </div>
+
     </footer>
     <div class="fb2022-copy">hahaha 2022 修改，面試用</div>
 

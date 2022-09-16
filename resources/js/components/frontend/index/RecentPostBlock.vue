@@ -1,66 +1,49 @@
 <!-- <script setup>語法糖 -->
 <script setup>
-const img_facebook_footer = "/img/facebook-footer.svg";
-const img_instagramm_footer = "/img/instagramm-footer.svg";
-const img_pinterest_footer = "/img/pinterest-footer.svg";
+import { storeToRefs } from 'pinia'
+import { useIndexStore } from '../../../stores/index.js'
 
-const img_architecture_1857175_1920 = "/img/architecture-1857175_1920.jpg";
-const img_castle_1998435_1920 = "/img/castle-1998435_1920.jpg";
-const img_staircase_274614_1920 = "/img/staircase-274614_1920.jpg";
+
+// const {
+//     // aboutBlock,
+//     // contactBlock,
+//     // mainSlider,
+//     // newArticleBlock,
+//     recentPostsBlock,
+//     // subscribeBlock,
+// } = useIndexStore();
+const store = useIndexStore();
+const {
+    aboutBlock,
+    // contactBlock,
+    // mainSlider,
+    // newArticleBlock,
+    recentPostsBlock,
+    // subscribeBlock,
+    show,
+} = storeToRefs(store);
+
 </script>
 
 <template>
-    <section id="posts" class="recent-posts">
+    <section id="posts" class="recent-posts" v-show="show">
         <div class="container">
-            <h2 class="underscore">最近貼文</h2>
-            <p class="sup-header">最近貼文最近貼文最近貼文最近貼文最近貼文 </p>
+            <h2 class="underscore">{{ recentPostsBlock.recentPost }}</h2>
+            <p class="sup-header">{{ recentPostsBlock.subHeader }}</p>
             <div class="posts-wrapper">
-                <div class="post-item">
+                <div class="post-item" v-for="(value,index) in recentPostsBlock.list">
                     <div class="post-meta">
-                        <span><i class="far fa-user"></i> Posted by hahaha</span><span><i class="far fa-calendar"></i>
-                            30 07 2021</span>
+                        <span><i class="far fa-user"></i> {{ value.user }}</span><span><i class="far fa-calendar"></i>
+                            {{ value.calendar }}</span>
                     </div>
-                    <a href="single-post.html" class="post-title">標題標題標題標題標題標題</a>
-                    <p class="post-content">內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容<br></p>
+                    <a :href="value.postTitle.href" class="post-title">{{ value.postTitle.title }}</a>
+                    <p class="post-content" v-html="value.postContent"></p>
                     <div class="post-meta">
-                        <span><i class="far fa-comment-alt"></i> 20 評論</span>
+                        <span><i class="far fa-comment-alt"></i> {{ value.postMeta }}</span>
                     </div>
                 </div>
-                <div class="post-item">
-                    <div class="post-meta">
-                        <span><i class="far fa-user"></i> Posted by hahaha</span><span><i class="far fa-calendar"></i>
-                            30 07 2021</span>
-                    </div>
-                    <a href="single-post.html" class="post-title">標題標題標題標題標題標題</a>
-                    <p class="post-content">內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容<br></p>
-                    <div class="post-meta">
-                        <span><i class="far fa-comment-alt"></i> 20 評論</span>
-                    </div>
-                </div>
-                <div class="post-item">
-                    <div class="post-meta">
-                        <span><i class="far fa-user"></i> Posted by hahaha</span><span><i class="far fa-calendar"></i>
-                            30 07 2021</span>
-                    </div>
-                    <a href="single-post.html" class="post-title">標題標題標題標題標題標題</a>
-                    <p class="post-content">內容內容內容內容內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容內容內容內容內容<br>
-                        內容內容內容內容內容內容內容內容內容內容內容內容內容<br></p>
-                    <div class="post-meta">
-                        <span><i class="far fa-comment-alt"></i> 00 評論</span>
-                    </div>
-                </div>
-                <a href="blog.html" class="main-button">顯示所有貼文</a>
+
+                <a href="/blog" class="main-button">{{ recentPostsBlock.showAllButton }}</a>
             </div>
         </div>
     </section>

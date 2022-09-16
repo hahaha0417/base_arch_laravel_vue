@@ -1,23 +1,38 @@
 <!-- <script setup>語法糖 -->
 <script setup>
-const img_facebook_footer = "/img/facebook-footer.svg";
-const img_instagramm_footer = "/img/instagramm-footer.svg";
-const img_pinterest_footer = "/img/pinterest-footer.svg";
+import { storeToRefs } from 'pinia'
+import { useIndexStore } from '../../../stores/index.js'
 
-const img_architecture_1857175_1920 = "/img/architecture-1857175_1920.jpg";
-const img_castle_1998435_1920 = "/img/castle-1998435_1920.jpg";
-const img_staircase_274614_1920 = "/img/staircase-274614_1920.jpg";
+
+// const {
+//     // aboutBlock,
+//     // contactBlock,
+//     mainSlider,
+//     // newArticleBlock,
+//     // recentPostsBlock,
+//     // subscribeBlock,
+// } = useIndexStore();
+const store = useIndexStore();
+const {
+    // aboutBlock,
+    // contactBlock,
+    mainSlider,
+    // newArticleBlock,
+    // recentPostsBlock,
+    // subscribeBlock,
+    show,
+} = storeToRefs(store);
+
 </script>
 
 <template>
-<section class="main-slider">
+<section class="main-slider" v-show="show">
     <div class="hero-img">
         <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-text">
-                <div class="welcome-text"><span class="big-text">WELCOME</span><span class="small-text">TO OUR
-                        BLOG</span></div>
-                <p>Vue3 套版測試 - 如有侵權請告知 hahaha0417@hotmail.com</p>
+                <div class="welcome-text"><span class="big-text">{{ mainSlider.welcome }}</span><span class="small-text">{{ mainSlider.sub}}</span></div>
+                <p>{{ mainSlider.content }}</p>
             </div>
         </div>
         <a href="#about"><i class="fas fa-chevron-down"></i></a>

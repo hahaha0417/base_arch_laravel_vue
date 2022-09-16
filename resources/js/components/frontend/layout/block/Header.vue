@@ -7,8 +7,13 @@ import { RouterLink, RouterView, useRouter, useRoute } from 'vue-router';
 // console.log(route);
 // console.log(window.location);
 
+import { useLayoutStore } from '../../../../stores/base/layout.js'
 
-const img_logo_blog = "/img/logo-blog.png";
+
+const {
+    headerBlock,
+    // footerBlock,
+} = useLayoutStore();
 
 </script>
 
@@ -19,9 +24,9 @@ const img_logo_blog = "/img/logo-blog.png";
         <nav id="#navbar" class="navbar dark dark navbar-expand-lg position-fixed top-0 w-100 py-2">
             <div class="container">
                 <RouterLink class="navbar-brand" to="/">
-                    <img :src="img_logo_blog" alt="">
+                    <img :src="headerBlock.title.logo" alt="">
                 </RouterLink>
-                Vue Router
+                {{ headerBlock.title.title }}
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -29,10 +34,10 @@ const img_logo_blog = "/img/logo-blog.png";
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <RouterLink class="nav-link" data-name="/" to="/">首頁</RouterLink>
-                        <RouterLink class="nav-link" data-name="/about" to="/about">關於</RouterLink>
-                        <RouterLink class="nav-link" data-name="/contact" to="/contact">聯絡方式</RouterLink>
-                        <RouterLink class="nav-link" data-name="/blog" to="/blog">部落格</RouterLink>
+                    <div v-for="(value,index) in headerBlock.links">
+                        <RouterLink class="nav-link" :data-name="value.url" :to="value.url">{{ value.title }}</RouterLink>
+                    </div>
+
                     </div>
                 </div>
             </div>

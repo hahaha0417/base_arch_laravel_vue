@@ -1,21 +1,37 @@
 <!-- <script setup>語法糖 -->
 <script setup>
-const img_facebook_footer = "/img/facebook-footer.svg";
-const img_instagramm_footer = "/img/instagramm-footer.svg";
-const img_pinterest_footer = "/img/pinterest-footer.svg";
+import { storeToRefs } from 'pinia'
+import { useIndexStore } from '../../../stores/index.js'
 
-const img_architecture_1857175_1920 = "/img/architecture-1857175_1920.jpg";
-const img_castle_1998435_1920 = "/img/castle-1998435_1920.jpg";
-const img_staircase_274614_1920 = "/img/staircase-274614_1920.jpg";
+
+const {
+    // aboutBlock,
+    // contactBlock,
+    // mainSlider,
+    // newArticleBlock,
+    // recentPostsBlock,
+    // subscribeBlock,
+} = useIndexStore();
+const store = useIndexStore();
+const {
+    // aboutBlock,
+    contactBlock,
+    // mainSlider,
+    // newArticleBlock,
+    // recentPostsBlock,
+    // subscribeBlock,
+    show,
+} = storeToRefs(store);
+// console.log(contactBlock.title);
 </script>
 
 <template>
-    <section id="contact" class="social-media">
+    <section id="contact" class="social-media" v-show="show">
         <div class="container">
-            <h2>想知道更多，關於我們?</h2>
-            <a href=""><img :src="img_facebook_footer" alt=""></a>
-            <a href=""><img :src="img_instagramm_footer" alt=""></a>
-            <a href=""><img :src="img_pinterest_footer" alt=""></a>
+            <h2>{{ contactBlock.title }}</h2>
+            <a :href="contactBlock.facebook.href"><img :src="contactBlock.facebook.image" alt=""></a>
+            <a :href="contactBlock.instagram.href"><img :src="contactBlock.instagram.image" alt=""></a>
+            <a :href="contactBlock.pinterest.href"><img :src="contactBlock.pinterest.image" alt=""></a>
         </div>
     </section>
 </template>

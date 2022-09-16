@@ -114,7 +114,7 @@ const router = createRouter({
     {
         path: '/:domain(.*)*',
         name: 'NotFound',
-        component: import('../views/404.vue')
+        component: import('../views/base/404.vue')
     },
   ]
 })

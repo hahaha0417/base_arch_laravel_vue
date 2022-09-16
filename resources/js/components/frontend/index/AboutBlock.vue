@@ -1,33 +1,48 @@
 <!-- <script setup>語法糖 -->
 <script setup>
-const img_facebook_footer = "/img/facebook-footer.svg";
-const img_instagramm_footer = "/img/instagramm-footer.svg";
-const img_pinterest_footer = "/img/pinterest-footer.svg";
+import { storeToRefs } from 'pinia'
+import { useIndexStore } from '../../../stores/index.js'
 
-const img_architecture_1857175_1920 = "/img/architecture-1857175_1920.jpg";
-const img_castle_1998435_1920 = "/img/castle-1998435_1920.jpg";
-const img_staircase_274614_1920 = "/img/staircase-274614_1920.jpg";
+
+// const {
+//     aboutBlock,
+//     contactBlock,
+//     mainSlider,
+//     newArticleBlock,
+//     recentPostsBlock,
+//     subscribeBlock,
+// } = useIndexStore();
+// 這樣才work
+const store = useIndexStore();
+const {
+    aboutBlock,
+    // contactBlock,
+    // mainSlider,
+    // newArticleBlock,
+    // recentPostsBlock,
+    // subscribeBlock,
+    show,
+} = storeToRefs(store);
+
 </script>
 
 <template>
-    <section id="about" class="aboutus">
+    <section id="about" class="aboutus" v-show="show">
         <div class="container">
             <div class="row">
                 <div class="right col-md-6">
                     <div class="text-right">
-                        <p>這是測試這是測試這是測試這是測試這是測試這是測試這是測試這是測試這是測試這是測試
+                        <p>{{ aboutBlock.title }}
                         </p>
                     </div>
                 </div>
                 <div class="left col-md-6">
                     <div class="text-left">
-                        <h2 class="underscore">關於我們</h2>
-                        <p class="sup-header">這是測試 </p>
-                        <p class="">這是測試這是測試這是測試這是測試這是測試這是測試這是測試這是測試這是測試<br>
-                            這是測試這是測試這是測試這是測試這是測試這是測試這是測試這是測試這是測試<br>
-                            這是測試這是測試這是測試這是測試這是測試這是測試這是測試這是測試這是測試<br></p>
+                        <h2 class="underscore">{{ aboutBlock.about }}</h2>
+                        <p class="sup-header">{{ aboutBlock.subHeader }}</p>
+                        <p class="">{{ aboutBlock.content }}</p>
                     </div>
-                    <a href="contact.html" class="main-button">一起工作</a>
+                    <a href="contact.html" class="main-button">{{ aboutBlock.button }}</a>
                 </div>
             </div>
         </div>

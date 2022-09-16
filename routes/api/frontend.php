@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Api\Controllers\Frontend\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::prefix('')
+    ->namespace('\App\Api\Controllers\Frontend')
+    ->middleware([
+        // '',
+    ])->group(function () {
+    // -----------------------------------------------------
+
+    Route::post('get', [IndexController::class, 'get']);
+
 });

@@ -54,7 +54,7 @@ use hahaha\function_base as hahaha_function_base;
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum beatae pariatur sequi
                                         vitae quia velit? Facere maxime delectus cum voluptas unde accusantium rerum ullam
                                         rem asperiores. Alias, omnis quidem....</p>
-                                    <a href="./single-post.html" class="main-button">Read More</a>
+                                    <a href=".//single_post" class="main-button">Read More</a>
                                 </div>
                             </div>
                             <div class="post-item">
@@ -69,7 +69,7 @@ use hahaha\function_base as hahaha_function_base;
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum beatae pariatur sequi
                                         vitae quia velit? Facere maxime delectus cum voluptas unde accusantium rerum ullam
                                         rem asperiores. Alias, omnis quidem....</p>
-                                    <a href="./single-post.html" class="main-button">Read More</a>
+                                    <a href=".//single_post" class="main-button">Read More</a>
                                 </div>
                             </div>
                             <div class="post-item">
@@ -84,7 +84,7 @@ use hahaha\function_base as hahaha_function_base;
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum beatae pariatur sequi
                                         vitae quia velit? Facere maxime delectus cum voluptas unde accusantium rerum ullam
                                         rem asperiores. Alias, omnis quidem....</p>
-                                    <a href="./single-post.html" class="main-button">Read More</a>
+                                    <a href=".//single_post" class="main-button">Read More</a>
                                 </div>
                             </div>
                             <div class="post-item">
@@ -99,7 +99,7 @@ use hahaha\function_base as hahaha_function_base;
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum beatae pariatur sequi
                                         vitae quia velit? Facere maxime delectus cum voluptas unde accusantium rerum ullam
                                         rem asperiores. Alias, omnis quidem....</p>
-                                    <a href="./single-post.html" class="main-button">Read More</a>
+                                    <a href=".//single_post" class="main-button">Read More</a>
                                 </div>
                             </div>
                             <div class="post-item">
@@ -114,7 +114,7 @@ use hahaha\function_base as hahaha_function_base;
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum beatae pariatur sequi
                                         vitae quia velit? Facere maxime delectus cum voluptas unde accusantium rerum ullam
                                         rem asperiores. Alias, omnis quidem....</p>
-                                    <a href="./single-post.html" class="main-button">Read More</a>
+                                    <a href=".//single_post" class="main-button">Read More</a>
                                 </div>
                             </div>
                             <div class="post-item">
@@ -129,7 +129,7 @@ use hahaha\function_base as hahaha_function_base;
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum beatae pariatur sequi
                                         vitae quia velit? Facere maxime delectus cum voluptas unde accusantium rerum ullam
                                         rem asperiores. Alias, omnis quidem....</p>
-                                    <a href="./single-post.html" class="main-button">Read More</a>
+                                    <a href=".//single_post" class="main-button">Read More</a>
                                 </div>
                             </div>
                             <div class="post-item">
@@ -144,7 +144,7 @@ use hahaha\function_base as hahaha_function_base;
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum beatae pariatur sequi
                                         vitae quia velit? Facere maxime delectus cum voluptas unde accusantium rerum ullam
                                         rem asperiores. Alias, omnis quidem....</p>
-                                    <a href="./single-post.html" class="main-button">Read More</a>
+                                    <a href=".//single_post" class="main-button">Read More</a>
                                 </div>
                             </div>
                             <div class="post-item">
@@ -159,7 +159,7 @@ use hahaha\function_base as hahaha_function_base;
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum beatae pariatur sequi
                                         vitae quia velit? Facere maxime delectus cum voluptas unde accusantium rerum ullam
                                         rem asperiores. Alias, omnis quidem....</p>
-                                    <a href="./single-post.html" class="main-button">Read More</a>
+                                    <a href=".//single_post" class="main-button">Read More</a>
                                 </div>
                             </div>
                         </div>

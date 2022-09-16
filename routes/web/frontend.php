@@ -55,5 +55,4 @@ Route::prefix('')
     Route::get('/blog', [IndexController::class, 'app']);
     Route::get('/contact', [IndexController::class, 'app']);
     Route::get('/single_post', [IndexController::class, 'app']);
-
 });
