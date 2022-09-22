@@ -33,7 +33,7 @@ const {
             </p>
             <form>
                 <input type="email" class="email text-uppercase" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="輸入你的信箱"><button type="submit"
+                    placeholder="輸入你的信箱"><button type="button"
                     class="button-subscribe text-uppercase">{{ subscribeBlock.subscribe }}</button>
             </form>
         </div>

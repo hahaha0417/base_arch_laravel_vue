@@ -19,12 +19,17 @@ const {
     // searchBlock,
     show,
 } = storeToRefs(store);
+function read_article(index) 
+{
+    // alert("4444");
+    location.href = "/single_post/" + (parseInt(index) + 1);
+}
 </script>
 
 <template>
     <h4 class="mb-3" v-show="show">{{ recentPostsBlock.recentPost }}</h4>
-    <div class="post-item" v-for="(value, index) in recentPostsBlock.list" v-show="show">
-        <a href="/single_post" class="post-title">{{ value.postTitle.title }}</a>
+    <div class="post-item" v-for="(value, index) in recentPostsBlock.list" v-show="show" :index="index">
+        <a @click="read_article(index)" role="button" class="post-title">{{ value.postTitle.title }}</a>
         <div class="post-meta">
             <span><i class="far fa-user"></i> Posted by {{ value.user }}</span
             ><span><i class="far fa-calendar"></i> {{value.calendar}}</span

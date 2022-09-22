@@ -576,11 +576,11 @@ EOT;
         內容內容內容內容內容內容內容內容內容內容內容內容<br>
         內容內容內容內容內容內容內容內容內容內容內容內容<br></p>
     <div class="share">
-        <a class="main-button" href=""><i class="fab fa-facebook-f"></i> FACEBOOK</a>
-        <a class="main-button" href=""> <i class="fab fa-google-plus-g"></i> GOOGLE+</a>
-        <a class="main-button" href=""><i class="fab fa-twitter"></i> TWITTER</a>
-        <a class="main-button" href=""><i class="fab fa-linkedin-in"></i> LINKEDIN</a>
-        <a class="main-button" href=""><i class="fab fa-pinterest-p"></i> PINTEREST</a>
+        <a class="main-button" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> FACEBOOK</a>
+        <a class="main-button" href="https://www.google.com/"> <i class="fab fa-google-plus-g"></i> GOOGLE+</a>
+        <a class="main-button" href="https://twitter.com/"><i class="fab fa-twitter"></i> TWITTER</a>
+        <a class="main-button" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i> LINKEDIN</a>
+        <a class="main-button" href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i> PINTEREST</a>
     </div>
     <div class="navigation">
         <a class="prew"><i class="fas fa-chevron-left"></i> PREVIOUS</a>

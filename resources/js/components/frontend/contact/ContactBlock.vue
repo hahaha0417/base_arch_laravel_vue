@@ -19,6 +19,11 @@ const {
     // searchBlock,
     show,
 } = storeToRefs(store);
+
+function xxx()
+{
+    alert("xxx");
+}
 </script>
 
 <template>
@@ -58,7 +63,7 @@ const {
             </div>
             <!-- Form submit button -->
             <div class="d-grid">
-                <button class="main-button mt-0 disabled" id="submitButton" type="submit">{{ contactBlock.button }}</button>
+                <button class="main-button mt-0 disabled" @click="xxx()" id="submitButton" type="button">{{ contactBlock.button }}</button>
             </div>
         </form>
     </div>

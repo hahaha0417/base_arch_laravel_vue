@@ -35,7 +35,7 @@ const {
                 <p>{{ mainSlider.content }}</p>
             </div>
         </div>
-        <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        <a href="/about"><i class="fas fa-chevron-down"></i></a>
     </div>
 </section>
 </template>

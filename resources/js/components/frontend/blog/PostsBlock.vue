@@ -22,6 +22,11 @@ const {
     // searchBlock,
     show,
 } = storeToRefs(store);
+function read_article(index) 
+{
+    // alert("4444");
+    location.href = "/single_post/" + (parseInt(index) + 1);
+}
 </script>
 
 <template>

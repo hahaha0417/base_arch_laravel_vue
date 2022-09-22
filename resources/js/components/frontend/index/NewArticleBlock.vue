@@ -38,7 +38,7 @@ const {
                             <p class="post-autor text-uppercase" v-html="value.postAutor"></p>
                             <p class="post-data text-uppercase" v-html="value.postData"></p>
                         </div>
-                        <a href="" class="card-button">{{ value.button }}</a>
+                        <a class="card-button">{{ value.button }}</a>
                     </div>
                 </div>
             </div>

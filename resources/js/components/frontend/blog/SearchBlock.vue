@@ -21,6 +21,12 @@ const {
     searchBlock,
     show,
 } = storeToRefs(store);
+
+function search_article() 
+{
+    alert("4444");
+    // location.href = "/single_post/" + (parseInt(index) + 1);
+}
 </script>
 
 <template>
@@ -28,7 +34,7 @@ const {
         <div class="form-outline">
             <input id="search-input" type="search" class="form-control" :placeholder="searchBlock.placeholder" />
         </div>
-        <button id="search-button" type="button" class="btn dark">
+        <button id="search-button" type="button" class="btn dark" @click="search_article">
             <i class="fas fa-search"></i>
         </button>
     </div>

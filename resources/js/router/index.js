@@ -103,6 +103,19 @@ const router = createRouter({
             main: SinglePostView,
         },
     },
+    {
+        path: '/single_post/:id',
+        name: 'single_post',
+        // route level code-splitting
+        // this generates a separate chunk (About.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        // component: () => import('../views/BlogView.vue'),
+        // 有s
+        components: {
+            // 不能用import，會重載入
+            main: SinglePostView,
+        },
+    },
     // {
     //   path: '/:id',
     //   name: 'userdata',

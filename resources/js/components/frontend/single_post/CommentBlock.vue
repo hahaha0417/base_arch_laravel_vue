@@ -21,7 +21,11 @@ const {
     commentBlock,
     show,
 } = storeToRefs(store);
-
+function post_comment(index) 
+{
+    alert("4444");
+    // location.href = "/single_post/" + (parseInt(index) + 1);
+}
 </script>
 
 <template>
@@ -56,7 +60,7 @@ const {
         </div>
         <!-- Form submit button -->
         <div class="d-grid">
-            <button class="main-button" id="submitButton" type="submit">{{ commentBlock.button }}</button>
+            <button class="main-button" @click="post_comment()" id="submitButton" type="button">{{ commentBlock.button }}</button>
         </div>
     </form>
 </template>

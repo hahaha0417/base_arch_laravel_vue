@@ -42,7 +42,7 @@ const {
                         <p class="sup-header">{{ aboutBlock.subHeader }}</p>
                         <p class="">{{ aboutBlock.content }}</p>
                     </div>
-                    <a href="contact.html" class="main-button">{{ aboutBlock.button }}</a>
+                    <a href="/contact" class="main-button">{{ aboutBlock.button }}</a>
                 </div>
             </div>
         </div>

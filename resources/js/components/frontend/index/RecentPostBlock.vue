@@ -22,7 +22,11 @@ const {
     // subscribeBlock,
     show,
 } = storeToRefs(store);
-
+function read_article(index) 
+{
+    // alert("4444");
+    location.href = "/single_post/" + (parseInt(index) + 1);
+}
 </script>
 
 <template>
@@ -31,7 +35,7 @@ const {
             <h2 class="underscore">{{ recentPostsBlock.recentPost }}</h2>
             <p class="sup-header">{{ recentPostsBlock.subHeader }}</p>
             <div class="posts-wrapper">
-                <div class="post-item" v-for="(value,index) in recentPostsBlock.list">
+                <div class="post-item" v-for="(value,index) in recentPostsBlock.list" :index="index">
                     <div class="post-meta">
                         <span><i class="far fa-user"></i> {{ value.user }}</span><span><i class="far fa-calendar"></i>
                             {{ value.calendar }}</span>

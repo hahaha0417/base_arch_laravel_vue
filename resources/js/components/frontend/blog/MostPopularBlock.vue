@@ -21,12 +21,18 @@ const {
     // searchBlock,
     show,
 } = storeToRefs(store);
+
+function read_article(index) 
+{
+    // alert("4444");
+    location.href = "/single_post/" + (parseInt(index) + 1);
+}
 </script>
 
 <template>
     <div class="popular pt-5" v-show="show">
         <h4 class="mb-3">{{ mostPopularPostsBlock.mostPopularPost }}</h4>
-        <div class="card bg-dark text-white" v-for="(value, index) in mostPopularPostsBlock.list">
+        <div class="card bg-dark text-white" v-for="(value, index) in mostPopularPostsBlock.list" :index="index">
             <img
                 :src="value.image"
                 class="card-img"
@@ -46,7 +52,7 @@ const {
                             評論</span
                         >
                     </div>
-                    <button class="card-button">{{ value.button }}</button>
+                    <button class="card-button" @click="read_article(index)">{{ value.button }}</button>
                 </div>
             </div>
         </div>
